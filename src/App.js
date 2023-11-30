@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
+  const today = new Date();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container d-flex align-items-center  justify-content-center  '>
+      <h1 className='display-1 text-primary '>
+        Welcome to React Starter Project
+        <hr />
+        <p className='text-center '>{today.toLocaleDateString()}</p>
+      </h1>
     </div>
   );
 }
