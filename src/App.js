@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container mx-auto py-4'>
+      <h1 className='text-3xl font-bold text-center'>
+        React Starter Tailwind template
+      </h1>
+      <div>
+        <div class='text-xl  text-center font-medium text-black'>ChitChat</div>
+        <p class='text-slate-500 text-center'>You have a new message!</p>
+      </div>
     </div>
   );
 }
